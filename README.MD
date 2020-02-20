@@ -3,7 +3,8 @@ Creating a blog of cool visualizations and forecasts for the world's greatest sp
 
 ## Developer Setup
 ### Create Virtual Environment
-python3 -m venv env
+Mac: python3 -m venv env
+Windows: python -m venv c:\repository_path\env
 
 ### Startup
 source env/bin/activate
