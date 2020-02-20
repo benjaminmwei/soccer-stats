@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<ul class='section-title'><h1>About</h1></ul>
+<article class="media content-section">
+    <div class="media-body">
+          <div class="article-metadata">
+          <p class="article-content">Two college buddies blogging and nerding out over sports.
+          </p>
+          {% for author in authors %}
+          <a class="mr-2" href = "#"> {{ author.name }}</a>
+        <h6> <a href ={{author.linkedin}} class = 'article-title'>{{ author.title }}</a></h6>
+        <a href ={{author.linkedin}}><img src={{author.picture}}> </a>
+        <div class="about-summary">
+            {{author.about}}
+        </div>
+        <div>
+            &nbsp; 
+            &nbsp; 
+        </div>
+        {% endfor %}
+    </div>
+</article>
+{% endblock content %}
+
